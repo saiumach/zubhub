@@ -6,7 +6,7 @@ help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | \
 		awk 'BEGIN {FS = ":.*?## "}; {printf "%-20s %s\n", $$1, $$2}'
 .PHONY: help
-
+#zdxcghu
 start: ## Start the docker-compose containers
 	docker-compose -f docker-compose.yml up --detach --build
 .PHONY: start
